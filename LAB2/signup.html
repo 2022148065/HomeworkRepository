@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>현정훈 물리 회원가입</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+    </head>
+
+    <body>
+        <div class = "surround">2024 현정훈 물리</div>
+        <form method = "post" action = "https://jhphysics.com">
+            <p>
+                <a href = "https://2022148065.github.io/HomeworkRepository/LAB2/login.html">로그인</a>
+                | <strong>회원가입</strong>
+            </p>
+            <p>
+                <label>이름 <input name = "name" type = "text" size = "" placeholder = "현정훈" autocomplete = "on" required autofocus /></label>
+            </p>
+            <p>
+                <label>학교 <input name = "school" type = "text" size = "" placeholder = "제주과학" required/></label> 고등학교
+            </p>
+            <p>
+                <label>분반 <select name = "time" required>
+                    <option>대치 토 09:00</option>
+                    <option>대치 토 13:30</option>
+                    <option>대치 토 18:30</option>
+                    <option>대치 일 09:00</option>
+                    <option>대치 일 13:30</option>
+                    <option>대치 일 18:30</option>
+                    <option>분당 월 18:30</option>
+                    <option>목동 화 18:30</option>
+                    <option>대치 재수종합</option>
+                    <option>목동 재수종합</option>
+                </select>
+            </label>
+            </p>
+            <p> 입반 주차
+                <label><input name = "start" type = "radio" value = "s2w03" checked> 시즌2 03주차</label>
+                <label><input name = "start" type = "radio" value = "s2w04" > 시즌2 04주차</label>
+                <label><input name = "start" type = "radio" value = "s2w05" > 시즌2 05주차</label>
+            </p>
+            <p>
+                <label>현재 등급대: 1<input name = "current" type = "range" min = "1" max = "9" step = "0.125">9</label>
+            </p>
+            <p>
+                <label>
+                    학생 전화번호 <input name = "student tel" placeholder = "010-1234-5678"
+                    pattern = "\(\d{3}\) \d{4}-\d{4}" autocomplete = "on" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    학부모 전화번호 <input name = "parent tel" placeholder = "010-1234-5678"
+                    pattern = "\(\d{3}\) \d{4}-\d{4}" required />
+                </label>
+            </p>
+            <p>
+                <label>수업 <input name = "before" type = "number" min = "1" max = "5" step = "1"> 일 전</label> <label><input name = "time" type = "time" /></label> 에 알림 수신
+            </p>
+            <p>
+                <label>
+                    이메일 <input name = "email" type = "email" placeholder = "name@domain.com" autocomplete = "on" required />
+                </label>
+            </p>
+            <p>
+                <label>비밀번호 <input name = "password" type = "password" placeholder = "대소문자, 숫자 8~16자"></label>
+            </p>
+            <p>
+                <label>비밀번호 확인 <input name = "password check" type = "password"></label>
+            </p>
+            <p><label>사이트 이용 약관 동의 <input name = "agree" type = "checkbox" value = "site" required></label>
+                <label>개인정보 수집 및 이용 동의 <input name = "agree" type = "checkbox" value = "personal" required></label>
+                <label>정보 수신 동의 <input name = "agree" type = "checkbox" value = "receive" required></label>
+            </p>
+            
+            <p>
+                <input type = "submit" value = "회원가입">
+                <input type = "reset" value = "초기화">
+            </p>
+        </form>
+    </body>
+</html>

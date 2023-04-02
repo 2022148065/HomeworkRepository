@@ -1,0 +1,21 @@
+
+body    { font-family: "Apple SD Gothic Neo","돋움", Helvetica;
+            font-size: 11pt;
+            background-color: rgb(247, 221, 221)}
+
+div      {display: block;
+            font-size: 2.5em;
+            margin-top: 0.25em;
+            color:rgb(69, 68, 68)}
+
+.surround {
+    border-width: thin;
+    border-style: solid;
+    border-color: black;
+    padding: 0.25em;
+    width: 32%;
+    height: 40px;
+}
+
+p       { text-align: justify;
+            color:rgb(93, 92, 92)}
