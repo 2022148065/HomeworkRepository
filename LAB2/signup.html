@@ -41,7 +41,7 @@
                 <label><input name = "start" type = "radio" value = "s2w05" > 시즌2 05주차</label>
             </p>
             <p>
-                <label>현재 등급대: 1<input name = "current" type = "range" min = "1" max = "9" step = "0.125">9</label>
+                <label>현재 등급대: 1<input name = "current" type = "range" min = "1" max = "9" step = "0.125" required>9</label>
             </p>
             <p>
                 <label>
@@ -52,11 +52,11 @@
             <p>
                 <label>
                     학부모 전화번호 <input name = "parent tel" placeholder = "010-1234-5678"
-                    pattern = "\(\d{3}\) \d{4}-\d{4}" required />
+                    pattern = "\d{3}\-\d{4}-\d{4}" required />
                 </label>
             </p>
             <p>
-                <label>수업 <input name = "before" type = "number" min = "1" max = "5" step = "1"> 일 전</label> <label><input name = "time" type = "time" /></label> 에 알림 수신
+                <label>수업 <input name = "before" type = "number" min = "1" max = "5" step = "1" required> 일 전</label> <label><input name = "time" type = "time" required /></label> 에 알림 수신
             </p>
             <p>
                 <label>
@@ -64,10 +64,10 @@
                 </label>
             </p>
             <p>
-                <label>비밀번호 <input name = "password" type = "password" placeholder = "대소문자, 숫자 8~16자"></label>
+                <label>비밀번호 <input name = "password" type = "password" placeholder = "대소문자, 숫자 8~16자" required></label>
             </p>
             <p>
-                <label>비밀번호 확인 <input name = "password check" type = "password"></label>
+                <label>비밀번호 확인 <input name = "password check" type = "password" required></label>
             </p>
             <p><label>사이트 이용 약관 동의 <input name = "agree" type = "checkbox" value = "site" required></label>
                 <label>개인정보 수집 및 이용 동의 <input name = "agree" type = "checkbox" value = "personal" required></label>
